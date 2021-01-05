@@ -1,0 +1,32 @@
+package java1;
+
+import java.util.Date;
+import java.awt.print.Book;
+
+public class Author {
+	
+	Book book;
+	String id;
+	Date rentStart;
+	Date rentEnd;
+	
+	
+	public Author(Book book, String id, Date rentEnd) {
+		
+		this.book=book;
+		this.id=id;
+		this.rentEnd=rentEnd;
+		
+	}
+	
+	public void endRent(Date d) {
+		this.rentEnd=new Date(d.d);
+	}
+	
+	public int costOf() {
+		return book.getPrice()*day
+	}
+	
+
+
+}
